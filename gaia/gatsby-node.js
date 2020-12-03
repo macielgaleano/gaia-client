@@ -1,7 +1,17 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
+const fetch = require("fetch-node")
+exports.createPages = async ({ actions }) => {
+  const { createPage } = actions
 
-// You can delete this file if you're not using it
+  const data = [
+    {
+      name: jose,
+    },
+  ]
+  data.map(product => {
+    createPage({
+      path: `/producto/${product.name}`,
+      component: require.resolve(`./src/components/product/Product.jsx`),
+      context: { product },
+    })
+  })
+}

@@ -1,0 +1,46 @@
+.bgHeader {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100))
+    url("https://images.unsplash.com/photo-1606922619211-1448e81dd5bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+}
+
+.bgHeaderImg {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  background: url("https://images.unsplash.com/photo-1606922619211-1448e81dd5bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+}
+
+.bgHeaderData {
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 59, 25, 0.8) 0%,
+    rgba(126, 128, 119, 0.6) 50%,
+    rgba(250, 252, 240, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.imageHeader {
+  max-width: 250px;
+  border-radius: 50%;
+}
+
+.referHeader {
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .imageHeader {
+    max-width: 200px;
+  }
+
+  .referHeader {
+    width: 100%;
+    margin-top: 100px;
+  }
+}

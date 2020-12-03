@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "../Nav/Nav";
 
@@ -13,7 +11,7 @@ const Product = () => {
   const { slug } = useParams();
   const [product, setProduct] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:9000/productos/${slug}`)
+    fetch(`https://gaia-server.vercel.app//productos/${slug}`)
       .then((data) => data.json())
       .then((data) => {
         setProduct([data]);

@@ -11,7 +11,7 @@ export default function ListOfProducts() {
   useEffect(() => {
     async function getData() {
       await axios
-        .get("http://localhost:9000/productos")
+        .get("https://gaia-server.vercel.app/productos")
         .then((products) => setProducts(products.data));
     }
     getData();
@@ -34,7 +34,8 @@ export default function ListOfProducts() {
                       src={product.pictures[0]}
                       alt=""
                       style={{
-                        maxHeight: "200px",
+                        maxHeight: "180px",
+                        height: "180px",
                         objectFit: "cover",
                         padding: "0 20px",
                       }}
@@ -44,7 +45,7 @@ export default function ListOfProducts() {
                         {product.name}
                       </h4>
 
-                      <p className="card-text" style={{ height: "70px" }}>
+                      <p className="card-text" style={{ height: "150px" }}>
                         {product.description}
                       </p>
                       <h3 className="text-info">${product.price}</h3>

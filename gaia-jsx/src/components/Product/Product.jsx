@@ -62,7 +62,7 @@ const Product = () => {
                         <p key={index} className="mt-2 pt-2">
                           <strong>Categoria: </strong>
                           <Link to={`/productos/categoria/${product.category}`}>
-                            {product.category ? product.category : "Sin categoria"}
+                            {product.category ? product.category.name : "Sin categoria"}
                           </Link>
                         </p>
                         <strong>Materiales: </strong>

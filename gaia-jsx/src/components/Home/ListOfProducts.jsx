@@ -49,16 +49,16 @@ export default function ListOfProducts() {
                         {product.description}
                       </p>
                       <h3 className="text-info">${product.price}</h3>
-                      <button
-                        type="button"
-                        name=""
-                        id=""
-                        className="btn btn-success w-100 mt-2"
-                      >
-                        <Link className="text-white" to={"/producto/" + product.slug}>
+                      <Link className="text-white" to={"/producto/" + product.slug}>
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          className="btn btn-success w-100 mt-2"
+                        >
                           Ver mas
-                        </Link>
-                      </button>
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </Col>

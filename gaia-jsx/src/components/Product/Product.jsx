@@ -13,7 +13,7 @@ const Product = () => {
   const { slug } = useParams();
   const [product, setProduct] = useState([]);
   useEffect(() => {
-    fetch(`https://gaia-server.vercel.app/productos/productos/${slug}`)
+    fetch(`https://gaia-server.vercel.app/productos/${slug}`)
       .then((data) => data.json())
       .then((data) => {
         setProduct([data]);

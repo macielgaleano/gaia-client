@@ -28,43 +28,41 @@ export default function HomePreview() {
             <h2 className="mt-5 mb-2 text-center">Nuestros productos destacados</h2>
           </Col>
           {products.length > 0 &&
-            products.map((product, index) => {
-              if (index < 4) {
-                return (
-                  <Col col={12} sm={6} md={3} key={index} className="mt-4">
-                    <div className="card text-left">
-                      <img
-                        className="card-img-top img-fluid"
-                        src={product.pictures[0]}
-                        alt=""
-                        style={{
-                          maxHeight: "180px",
-                          height: "180px",
-                          objectFit: "cover",
-                          padding: "0 20px",
-                        }}
-                      />
-                      <div className="card-body">
-                        <h4 className="card-title" style={{ height: "100px" }}>
-                          {product.name}
-                        </h4>
+            products.slice(0, 8).map((product, index) => {
+              return (
+                <Col col={12} sm={6} md={3} key={index} className="mt-4">
+                  <div className="card text-left">
+                    <img
+                      className="card-img-top img-fluid"
+                      src={product.pictures[0]}
+                      alt=""
+                      style={{
+                        maxHeight: "180px",
+                        height: "180px",
+                        objectFit: "cover",
+                        padding: "0 20px",
+                      }}
+                    />
+                    <div className="card-body">
+                      <h4 className="card-title" style={{ height: "100px" }}>
+                        {product.name}
+                      </h4>
 
-                        <h3 className="text-info">${product.price}</h3>
-                        <Link className="text-white" to={"/producto/" + product.slug}>
-                          <button
-                            type="button"
-                            name=""
-                            id=""
-                            className="btn btn-success w-100 mt-2"
-                          >
-                            Ver mas
-                          </button>
-                        </Link>
-                      </div>
+                      <h3 className="text-info">${product.price}</h3>
+                      <Link className="text-white" to={"/producto/" + product.slug}>
+                        <button
+                          type="button"
+                          name=""
+                          id=""
+                          className="btn btn-success w-100 mt-2"
+                        >
+                          Ver mas
+                        </button>
+                      </Link>
                     </div>
-                  </Col>
-                );
-              }
+                  </div>
+                </Col>
+              );
             })}
         </Row>
       </Container>

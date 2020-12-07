@@ -1,21 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 // import Fade from "react-reveal/Fade";
 import Col from "react-bootstrap/Col";
+import { useDispatch, useSelector } from "react-redux";
+import { actionAddProducts } from "../../Redux/actions/actionAddProducts";
 
 export default function ListOfProducts() {
-  const [products, setProducts] = useState({});
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.product);
   useEffect(() => {
     async function getData() {
       await axios
         .get("https://gaia-server.vercel.app/productos")
-        .then((products) => setProducts(products.data));
+        .then((products) => dispatch(actionAddProducts(products.data)));
     }
     getData();
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>

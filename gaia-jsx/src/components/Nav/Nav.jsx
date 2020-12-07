@@ -3,9 +3,9 @@ import React from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
+// import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
+// import FormControl from "react-bootstrap/FormControl";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 // import NavDropdown from "react-bootstrap/NavDropdown";
@@ -27,12 +27,12 @@ const NavbarGaia = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto ">
-              <Nav.Link href="/" className="text-success">
+            <Nav className="mr-auto ml-2">
+              <Nav.Link href="/" className="text-success mt-2">
                 Incio
               </Nav.Link>
-              <Nav.Link href="/" className="text-success">
-                Ver productos
+              <Nav.Link href="/productos" className="text-success mt-2">
+                Productos
               </Nav.Link>
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -42,14 +42,14 @@ const NavbarGaia = () => {
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
               </NavDropdown> */}
             </Nav>
-            <Form inline>
+            {/* <Form inline>
               <FormControl
                 type="text"
                 placeholder="Buscar producto"
                 className="mr-sm-2"
               />
               <Button variant="outline-success">Buscar</Button>
-            </Form>
+            </Form> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

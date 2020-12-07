@@ -34,13 +34,48 @@
   width: 60%;
 }
 
+.colorProduct {
+  color: white;
+  width: 80px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+/* 
+.fixBox {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  width: 65%;
+  background: rgb(4, 80, 42);
+} */
+
 @media screen and (max-width: 600px) {
   .imageHeader {
     max-width: 200px;
+  }
+  .linkToHome {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .brandNav {
+    margin-left: 10px;
+    font-size: 1.5rem;
   }
 
   .referHeader {
     width: 100%;
     margin-top: 100px;
+  }
+  .seiton {
+    text-align: start;
+    margin-top: 50px;
+  }
+
+  .social-media-footer {
+    text-align: start;
+    margin-top: 30px;
   }
 }

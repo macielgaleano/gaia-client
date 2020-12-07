@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Fade from "react-reveal/Fade";
 import Col from "react-bootstrap/Col";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Header() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -37,11 +38,15 @@ export default function Header() {
                     src={window.location.origin + "/gaia.jpeg"}
                     alt=""
                   />
-                  <h1 className="mt-2 text-center">Gaia Creaciones</h1>
+                  <h1 className="mt-2 text-center">Gaia Diseño y Creaciones</h1>
                   <p className="text-center mr-5 ml-5 referHeader mt-2">
                     Gaia Diseño y Creaciones es un emprendimiento que nace entre nosotras,
                     dos hermanas en la búsqueda de crear lo que más nos gusta.
                   </p>
+                  <h4 className="text-center mr-5 ml-5 mt-3">
+                    <FaWhatsapp></FaWhatsapp> 092847551 Maga / <FaWhatsapp></FaWhatsapp>{" "}
+                    092847551 Valeria
+                  </h4>
                 </div>
               </Fade>
             </Col>

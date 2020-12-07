@@ -11,3 +11,42 @@
 .brandNav {
   font-size: 1.5rem;
 }
+
+.about {
+  background: rgb(38, 51, 32);
+  color: rgb(255, 255, 255);
+}
+
+.about-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer {
+  background: rgb(15, 19, 15);
+  color: white;
+  padding: 60px 0;
+}
+
+.icon-instagram {
+  background: hotpink;
+  color: beige;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.icon-facebook {
+  background: rgb(3, 22, 190);
+  color: beige;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.seiton {
+  text-align: end;
+}

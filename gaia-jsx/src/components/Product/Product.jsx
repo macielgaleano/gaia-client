@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 // import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "../Nav/Nav";
+import { Markup } from "interweave";
 import Footer from "../Footer/Footer";
 
 const Product = () => {
@@ -55,7 +56,8 @@ const Product = () => {
                         >
                           <h1>{product.name}</h1>
                           <p className="mt-2 pt-2">
-                            <strong>Descripción:</strong> {product.description}
+                            <strong>Descripción:</strong>{" "}
+                            <Markup content={product.description.slice(0, 200)}></Markup>
                           </p>
 
                           <p key={index} className="mt-2 pt-2">

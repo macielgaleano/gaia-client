@@ -48,9 +48,6 @@ export default function ListOfProducts() {
                         {product.name}
                       </h4>
 
-                      <p className="card-text" style={{ height: "150px" }}>
-                        {product.description}
-                      </p>
                       <h3 className="text-info">${product.price}</h3>
                       <Link className="text-white" to={"/producto/" + product.slug}>
                         <button

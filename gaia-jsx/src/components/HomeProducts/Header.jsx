@@ -20,7 +20,7 @@ export default function Header() {
     }
   }, []);
   return (
-    <div className="bgHeaderImg">
+    <div className="bgHeaderImg mt-5">
       <div className="bgHeaderData">
         <Container>
           <Row>
